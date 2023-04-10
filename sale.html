@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Offers</title>
+    <link rel="stylesheet" href="style.css">
+    </link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    
+   <section id="header">
+    <div class="logo"><a href="index.html"><img src="LOGO.png"></a></div>
+    <div class="sbox">
+        <input type="text" placeholder="Search...">
+        <a href="#">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+    </div>
+    <nav>
+        <ul id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a  href="shop.html">Shop</a></li>
+            <li><a class="active" href="sale.html">Offers</a></li>
+            <li><a href="newarrivals.html">New Arrivals</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>    
+        </ul>
+    </nav>
+   </section>
+    
+   <!DOCTYPE html>
+    
+   <html lang="en" dir="ltr">
+     <body>
+       <div class="sidebar close">
+         <div class="logo-details">
+         <span class="logo_name">Lightshoes.com</span>
+         </div>
+         <ul class="nav-links">
+           <li>
+             <a href="shop.html">
+              <i class='bx bx-store'></i>
+               <span class="link_name">Store</span>
+             </a>
+             <ul class="sub-menu blank">
+               <li><a class="link_name" href="shop.html">Store</a></li>
+             </ul>
+           </li>
+ 
+           <li>
+              <div class="iocn-link">
+                <a href="#">
+                 <i class='bx bx-collection' ></i>
+                  <span class="link_name">Collection</span>
+                </a>
+                <i class='bx bxs-chevron-down arrow' ></i>
+              </div>
+              <ul class="sub-menu">
+                <li><a class="link_name" href="#">Collection</a></li>
+                <li><a href="sneakers.html">Sneakers</a></li>
+                <li><a href="jordan.html">Jordan</a></li>
+                <li><a href="casuals.html">Casuals</a></li>
+                <li><a href="sports.html">Sports shoes</a></li>
+                <li><a href="running.html">Running shoes</a></li>
+              </ul>
+            </li>
+ 
+            <li>
+              <div class="iocn-link">
+                <a href="#">
+                 <i class='bx bx-search-alt'></i>
+                  <span class="link_name">Brands</span>
+                </a>
+                <i class='bx bxs-chevron-down arrow' ></i>
+              </div>
+              <ul class="sub-menu">
+                <li><a class="link_name" href="#">Brands</a></li>
+                <li><a href="nike.html">Nike</a></li>
+                <li><a href="adidas.html">Adidas</a></li>
+                <li><a href="reebok.html">Reebok</a></li>
+                <li><a href="sparx.html">Sparx</a></li>
+                <li><a href="gucci.html">Gucci</a></li>
+              </ul>
+            </li>
+ 
+           <li>
+             <div class="iocn-link">
+               <a href="#">
+                <i class='bx bx-category'></i>
+                 <span class="link_name">Category</span>
+               </a>
+               <i class='bx bxs-chevron-down arrow' ></i>
+             </div>
+             <ul class="sub-menu">
+               <li><a class="link_name" href="#">Category</a></li>
+               <li><a href="men.html">Men</a></li>
+               <li><a href="women.html">Women</a></li>
+               <li><a href="kids.html">Kids</a></li>
+             </ul>
+           </li>
+           
+           <li>
+             <a href="sale.html">
+              <i class='bx bxs-offer'></i>
+               <span class="link_name">Offers</span>
+             </a>
+             <ul class="sub-menu blank">
+               <li><a class="link_name" href="sale.html">Offers</a></li>
+             </ul>
+           </li>
+          
+           <li>
+             <a href="cart.html">
+              <i class='bx bx-cart-alt' ></i>
+               <span class="link_name">Cart</span>
+             </a>
+             <ul class="sub-menu blank">
+               <li><a class="link_name" href="cart.html">Cart</a></li>
+             </ul>
+           </li>
+          
+          
+         <div class="profile-details">
+           <div class="profile-content">
+             <!--<img src="image/profile.jpg" alt="profileImg">-->
+           </div>
+         </div>
+       </li>
+     </ul>
+       </div>
+       <section class="home-section">
+         <div class="home-content">
+           <i class='bx bx-menu' ></i>
+         </div>  
+       </section>
+         
+         <script>
+         let arrow = document.querySelectorAll(".arrow");
+         for (var i = 0; i < arrow.length; i++) {
+           arrow[i].addEventListener("click", (e)=>{
+          let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+          arrowParent.classList.toggle("showMenu");
+           });
+         }
+         let sidebar = document.querySelector(".sidebar");
+         let sidebarBtn = document.querySelector(".bx-menu");
+         console.log(sidebarBtn);
+         sidebarBtn.addEventListener("click", ()=>{
+           sidebar.classList.toggle("close");
+         });
+         </script>
+       </body>
+       
+    </html>
+     
+         
+    
+   <section id="product1" class="section-p1">
+    <div>
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='saproduct1.html';">
+                <img src="sale10a.webp" alt="">
+                <div class="desc">
+                    <span>Nike</span>
+                    <h5>Huarache Run</h5>
+                    <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+              <h4>₹5250</h4><h3>₹10500</h3>
+            </div>
+            <center><a><i class="fa-solid fa-cart-shopping cart"></i></a></center>
+        </div>
+
+        <div class="pro" onclick="window.location.href='saproduct2.html';">
+            <img src="sale8a.webp" alt="">
+            <div class="desc">
+                <span>Bata</span>
+                <h5>Force 1 Fontanka</h5>
+                <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+           <h4>₹6250</h4><h3>₹12500</h3>
+           </div>
+          <center><a><i class="fa-solid fa-cart-shopping cart"></i></a></center>
+        </div>
+
+        <div class="pro" onclick="window.location.href='saproduct3.html';">
+            <img src="sale3a.webp" alt="">
+            <div class="desc">
+                <span>Nike</span>
+                <h5>React Infinity 3</h5>
+                <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+           <h4>₹4250</h4><h3>₹8500</h3>
+           </div>
+          <center><a><i class="fa-solid fa-cart-shopping cart"></i></a></center>
+        </div>
+
+        <div class="pro" onclick="window.location.href='saproduct4.html';">
+            <img src="sale9a.webp" alt="">
+            <div class="desc">
+                <span>Reebok</span>
+                <h5>Max 90 LTR</h5>
+                <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+           <h4>₹4750</h4><h3>₹9500</h3>
+           </div>
+          <center><a><i class="fa-solid fa-cart-shopping cart"></i></a></center>
+        </div>
+
+        <div class="pro" onclick="window.location.href='saproduct5.html';">
+            <img src="sale5a.webp" alt="">
+            <div class="desc">
+                <span>Sparx</span>
+                <h5> blue wave</h5>
+                <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+           <h4>₹6750</h4><h3>₹12500</h3>
+           </div>
+          <center><a><i class="fa-solid fa-cart-shopping cart"></i></a></center>
+        </div>
+
+        <div class="pro" onclick="window.location.href='saproduct6.html';">
+            <img src="sale7a.webp" alt="">
+            <div class="desc">
+                <span>Gucci</span>
+                <h5> Precision 6</h5>
+                <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+           <h4>₹4448</h4><h3>₹8896</h3>
+           </div>
+          <center><a><i class="fa-solid fa-cart-shopping cart"></i></a></center>
+        </div>
+
+        <div class="pro" onclick="window.location.href='saproduct7.html';">
+            <img src="sale4a.webp" alt="">
+            <div class="desc">
+                <span>Adidas</span>
+                <h5>Dunk Low Disrupt 2</h5>
+                <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+           <h4>₹10000</h4><h3>₹20000</h3>
+           </div>
+          <center><a><i class="fa-solid fa-cart-shopping cart"></i></a></center>
+        </div>
+
+        </div>
+        </div>
+        </section>
+
+        
+   <footer class="=section-p1">
+    <div class="col">
+        
+        <h4>Contact</h4>
+        <p><strong>Address:</strong> Kondhwe Dhawde NDA road,Pune-23</p>
+        <p><strong>Phone:</strong> +91 7620311237 / +91 7357379167</p>
+        <p><strong>Hours:</strong> 9:00 AM - 10:00 PM , Mon - Sat</p>
+        <div class="follow">
+            <h4>Follow Us</h4>
+            <div class="icon">
+              <i class="fab fa-facebook-f"></i> 
+              <i class="fab fa-twitter"></i>  
+              <i class="fab fa-instagram"></i> 
+              <i class="fab fa-pintrest-p"></i>
+              <i class="fab fa-youtube"></i>      
+            </div>
+        </div>
+     </div>
+
+     <div class="col">
+        <h4>About</h4>
+        <a href="about.html">About us</a>
+        <a>Deliviery Information</a>
+        <a>Privacy Policy</a>
+        <a>Terms & Conditions</a>
+        <a href="contact.html">Contact us</a>
+     </div>
+
+     <div class="col">
+        <h4>My Account</h4>
+        <a href="login.html">Sign In </a>
+        <a href="cart.html">View Cart</a>
+        <a href="cart.html">My Wishlist</a>
+        <a href="cart.html">Track My Order</a>
+        <a href="contact.html">Help</a>
+     </div>
+
+     <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+            <img src="apple.jpg" alt="" height="60px" width="120px" >
+            <img src="google.jpg" alt="" height="60px" width="120px" >
+        </div>
+
+     </div>
+     <div class="copyright">
+        <p>© 2023 lightshoes.com, Inc. All Rights Reserved</p>
+     </div>
+</footer> 
+
+        </body>
+        </html>
